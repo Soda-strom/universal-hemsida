@@ -1,14 +1,5 @@
 import { useEffect, useRef } from 'react'
 
-/**
- * Gallery images — save these files to public/ to replace the placeholders:
- *   public/gallery-glass.jpg     — sprucken ruta / stenskott
- *   public/gallery-folie.jpg     — PPF-folie på blå bil
- *   public/gallery-interior.jpg  — invändig rengöring
- *   public/gallery-polishing.jpg — polering av BMW-grill
- *   public/gallery-detail.jpg    — instrumentbräda rengöring
- *   public/gallery-machine.jpg   — maskinpolering Mercedes
- */
 const images = [
   {
     src:     '/gallery-folie.jpg',
@@ -185,17 +176,7 @@ export default function GalleriPage() {
         </div>
       </div>
 
-      {/* Second row — hero shot repeated at full width */}
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 2rem 6rem' }}>
-        <p style={{
-          marginTop: '1.5rem', fontWeight: 300, fontSize: '0.75rem',
-          color: 'var(--text-dim)', letterSpacing: '0.04em',
-        }}>
-          Spara bilder i <code style={{ fontSize: '0.7rem', background: 'var(--surface)', padding: '1px 5px' }}>public/</code> med
-          namnen: gallery-folie.jpg, gallery-interior.jpg, gallery-glass.jpg,
-          gallery-machine.jpg, gallery-polishing.jpg, gallery-detail.jpg
-        </p>
-      </div>
+      <div style={{ paddingBottom: '6rem' }} />
 
       <style>{`
         @media (max-width: 640px) {
